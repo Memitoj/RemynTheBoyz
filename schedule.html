@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.1/dist/fullcalendar.min.css"> 
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.1/dist/fullcalendar.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
                     <img src="img/RemynTheBoys.png" alt="Remy&TheBoyz Logo" class="logo-image">
                 </a>
                 </div>
-            <h1 class="center">Stream Schedule</h1> 
+            <h1 class="center">Stream Schedule</h1>
             <nav>
                 <ul class="center">
                     <li><a href="Multimedia.html">Media</a></li>
@@ -31,42 +31,71 @@
     </header>
 
     <main>
-        <section id="schedule" class="center"> 
+        <section id="schedule" class="center">
             <h3>Upcoming Stream Schedule</h3>
             <table>
                 <thead>
                     <tr>
                         <th>Date</th>
+                        <th>Time (PST)</th>
                         <th>Game</th>
                         <th>Platform</th>
+                        <th>Notes</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Dec 5, 2024</td>
+                        <td>7:00 PM</td>
                         <td>Lockdown Protocol</td>
                         <td>Twitch</td>
+                        <td>Playing with the community!</td>
                     </tr>
                     <tr>
                         <td>Dec 7, 2024</td>
+                         <td>1:00 PM</td>
                         <td>Minecraft</td>
                         <td>YouTube</td>
+                        <td>Building a new base!</td>
                     </tr>
                     <tr>
                         <td>Dec 10, 2024</td>
+                        <td>8:00 PM</td>
                         <td>Call of Duty</td>
                         <td>Twitch</td>
+                         <td>Grinding Ranked Play!</td>
+                    </tr>
+                      <tr>
+                        <td>Dec 12, 2024</td>
+                        <td>7:30 PM</td>
+                        <td>Variety Stream</td>
+                        <td>Twitch</td>
+                          <td>Playing whatever the community wants</td>
+                    </tr>
+                      <tr>
+                        <td>Dec 15, 2024</td>
+                        <td>2:00 PM</td>
+                        <td>Special Guest Stream</td>
+                        <td>Twitch</td>
+                        <td>Check out our awesome guest!</td>
+                    </tr>
+                      <tr>
+                        <td>Dec 18, 2024</td>
+                       <td>6:00 PM</td>
+                        <td>Weekend Gaming</td>
+                        <td>Twitch</td>
+                         <td>Lets hang out and have fun</td>
                     </tr>
                 </tbody>
             </table>
 
             <h3>Stream Calendar</h3>
-            <div id="calendar"></div> 
+            <div id="calendar"></div>
         </section>
     </main>
 
     <footer>
-        <div class="container center"> 
+        <div class="container center">
             <p>© 2024 Remy&TheBoyz Gaming Channel. All rights reserved.</p>
             <ul class="center">
                 <li><a href="mailto:your-email@example.com">Contact Me</a></li>
@@ -74,25 +103,6 @@
             </ul>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.1/dist/fullcalendar.min.js"></script> 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth', 
-                events: [ 
-                    { title: 'Lockdown Protocol', date: '2024-12-05', url: 'https://www.twitch.tv/your_channel' }, 
-                    { title: 'Minecraft', date: '2024-12-07', url: 'https://www.youtube.com/channel/your_channel_id' }, 
-                    { title: 'Call of Duty', date: '2024-12-10', url: 'https://www.twitch.tv/your_channel' },
-                    { title: 'Variety Stream', date: '2024-12-12', url: 'https://www.twitch.tv/your_channel' }, 
-                    { title: 'Special Guest Stream', date: '2024-12-15', url: 'https://www.twitch.tv/your_channel' }, 
-                    { title: 'Weekend Gaming', date: '2024-12-18', url: 'https://www.twitch.tv/your_channel' } 
-                ]
-            });
-            calendar.render();
-        });
-    </script>
 
 </body>
 </html>
