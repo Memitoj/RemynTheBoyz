@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/RemynTheBoys.png" alt="Remy&TheBoyz Logo" class="logo-image">
+                </a>
+                </div>
+            <h1>Community</h1> 
+            <nav>
+                <ul>
+                    <li><a href="Multimedia.html">Media</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="content.html">Content</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Merchandise Section -->
+    <section id="merch">
+        <h3>Check Out Our Merch!</h3>
+        <p>Support the squad by grabbing some awesome gear!</p>
+        <div class="merch-items">
+            <div class="merch-item">
+                <img src="img/Gemini_Generated_Image_zcz756zcz756zcz7.jpeg" alt="Squad T-Shirt">
+                <p>Squad T-Shirt & Hoodie- $25</p>
+                <a href="shop.html" class="button">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Interaction Section -->
+    <main>
+        <h2>Join the Conversation!</h2>
+        <p>Connect with other fans on our social media or Discord! Let's build a strong community together.</p>
+        
+        <!-- Social Media Links -->
+        <div id="social-links">
+            <a href="https://x.com/RemynTheBoyz" target="_blank">Follow us on Twitter</a>
+            <a href="https://www.instagram.com/remyntheboyz?igsh=bG5raGZ2NTFnb2x2" target="_blank">Follow us on Instagram</a>
+            <a href="https://discord.gg/QmZeZX7B" target="_blank">Join our Discord Server</a>
+        </div>
+
+        <!-- Live Chat Widget (Example: Tawk.to) -->
+        <div id="live-chat">
+            <p>Need help or want to chat with us live? Click the chat button below!</p>
+            <!-- Replace with actual chat widget integration -->
+            <a href="https://tawk.to" target="_blank" class="button">Chat with Us</a>
+        </div>
+
+        <!-- Comment Section -->
+        <section id="comments">
+            <h3>Community Feedback</h3>
+            <p>Share your thoughts with us! Leave a comment below:</p>
+            <textarea id="comment-box" placeholder="Write your comment here..."></textarea>
+            <button id="submit-comment">Post Comment</button>
+
+            <div id="comments-list">
+                <!-- Sample comment -->
+                <div class="comment">
+                    <p><strong>User123:</strong> Love the new merch! Can't wait to grab a hoodie!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Gaming Channel</p>
+    </footer>
+
+    <script>
+        document.getElementById('submit-comment').addEventListener('click', function() {
+            const commentText = document.getElementById('comment-box').value;
+            if (commentText.trim() !== "") {
+                const commentSection = document.getElementById('comments-list');
+                const newComment = document.createElement('div');
+                newComment.classList.add('comment');
+                newComment.innerHTML = `<p><strong>You:</strong> ${commentText}</p>`;
+                commentSection.appendChild(newComment);
+                document.getElementById('comment-box').value = ''; // Clear comment box
+            }
+        });
+    </script>
+</body>
+</html>
